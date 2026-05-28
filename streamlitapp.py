@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-df=pd.read_csv('D:\code\CAMPUSX\streamlit\startup_cleaned.csv')
+df=pd.read_csv('startup_cleaned.csv')
 st.set_page_config(layout='wide',page_title="Startup Analysis by SumitYadav")
 df['Date']=pd.to_datetime(df['Date'],errors='coerce')
 df['Year']=df['Date'].dt.year
